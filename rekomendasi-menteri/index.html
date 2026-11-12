@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#173c32" />
+    <title>Rekomendasi Calon Menteri | BEM FAPET UGM</title>
+    <link rel="icon" type="image/png" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="welcomeScreen" class="welcome-screen">
+      <div class="welcome-content">
+        <div class="welcome-logo">BEM FAPET UGM</div>
+
+        <div class="welcome-line"></div>
+
+        <p class="welcome-eyebrow">A JOURNEY OF DEDICATION</p>
+
+        <h1 class="welcome-title">
+          Terima Kasih Telah<br />
+          Sampai di Titik Ini.
+        </h1>
+
+        <p class="welcome-description">
+          Setiap perjalanan memiliki proses, dan setiap proses menyimpan cerita
+          tentang dedikasi, pembelajaran, serta kontribusi.
+        </p>
+
+        <p class="welcome-message">
+          Terima kasih telah menjadi bagian dari perjalanan BEM FAPET UGM. Kini,
+          kita sampai pada satu tahap penting untuk menentukan arah dan
+          melanjutkan langkah ke depan.
+        </p>
+
+        <p class="welcome-closing">
+          Every next step begins with a meaningful decision.
+        </p>
+
+        <button id="startButton" class="welcome-button">
+          MULAI PERJALANAN
+          <span>→</span>
+        </button>
+      </div>
+
+      <div class="welcome-decoration decoration-one"></div>
+      <div class="welcome-decoration decoration-two"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <div class="brand-logo">
+            <img src="assets/logo-bem.svg" alt="Logo BEM FAPET UGM" />
+          </div>
+          <div>
+            <p class="brand-name">BEM FAPET UGM</p>
+            <p class="brand-subtitle">Kabinet Nala Sathya</p>
+          </div>
+        </div>
+        <span class="period-label">SITARA</span>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <p class="eyebrow">FORMULIR REKOMENDASI</p>
+        <h1>Rekomendasi Calon Menteri</h1>
+        <p class="hero-description">
+          Formulir pengajuan rekomendasi calon Menteri BEM Fakultas Peternakan
+          Universitas Gadjah Mada Periode 2027.
+        </p>
+        <div class="hero-meta">
+          <div>
+            <span class="meta-label">BATAS PENGISIAN</span>
+            <strong>25 November 2026</strong>
+            <span class="meta-detail">Pukul 12.00 WIB</span>
+          </div>
+          <div>
+            <span class="meta-label">KETENTUAN</span>
+            <strong>Minimal 2 kandidat</strong>
+            <span class="meta-detail">Maksimal 30 kandidat</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="notice">
+        <strong>Informasi kerahasiaan</strong>
+        <p>
+          Seluruh proses dan nama yang direkomendasikan bersifat rahasia sampai
+          keputusan resmi ditetapkan oleh Ketua BEM periode berikutnya.
+        </p>
+      </div>
+
+      <form id="recommendationForm" novalidate>
+        <section class="form-section">
+          <div class="section-heading">
+            <span class="section-number">01</span>
+            <div>
+              <h2>Identitas Pengirim</h2>
+              <p>Pengajuan dilakukan bersama oleh Menteri dan Wakil Menteri.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="ministry"
+              >Kementerian <span class="required">*</span></label
+            >
+            <select id="ministry" name="ministry" required>
+              <option value="">Pilih kementerian</option>
+            </select>
+            <div
+              id="ministryStatus"
+              class="ministry-status hidden"
+              role="status"
+              aria-live="polite"
+            ></div>
+            <small class="field-help"
+              >Satu pengajuan resmi untuk setiap kementerian.</small
+            >
+          </div>
+
+          <div class="two-columns">
+            <div class="field">
+              <label for="ministerName"
+                >Nama Menteri <span class="required">*</span></label
+              >
+              <input
+                id="ministerName"
+                name="ministerName"
+                type="text"
+                required
+                placeholder="Nama lengkap"
+              />
+            </div>
+            <div class="field">
+              <label for="ministerNim"
+                >NIM Menteri <span class="required">*</span></label
+              >
+              <input
+                id="ministerNim"
+                name="ministerNim"
+                type="text"
+                required
+                placeholder="Contoh: 23/123456/TP/12345"
+              />
+            </div>
+            <div class="field">
+              <label for="viceName"
+                >Nama Wakil Menteri <span class="required">*</span></label
+              >
+              <input
+                id="viceName"
+                name="viceName"
+                type="text"
+                required
+                placeholder="Nama lengkap"
+              />
+            </div>
+            <div class="field">
+              <label for="viceNim"
+                >NIM Wakil Menteri <span class="required">*</span></label
+              >
+              <input
+                id="viceNim"
+                name="viceNim"
+                type="text"
+                required
+                placeholder="NIM Wakil Menteri"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <span class="section-number">02</span>
+            <div>
+              <h2>Data Calon Menteri</h2>
+              <p>Masukkan minimal dua nama calon yang direkomendasikan.</p>
+            </div>
+          </div>
+
+          <div id="candidateList"></div>
+          <button type="button" id="addCandidate" class="button button-outline">
+            + Tambah Kandidat
+          </button>
+          <p class="field-help candidate-limit">
+            Minimal 2 dan maksimal 30 kandidat.
+          </p>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <span class="section-number">03</span>
+            <div>
+              <h2>Verifikasi Persyaratan</h2>
+              <p>Pastikan setiap kandidat memenuhi seluruh kriteria berikut.</p>
+            </div>
+          </div>
+
+          <div class="verification-list">
+            <label class="check-row">
+              <input type="checkbox" id="activeStudent" />
+              <span
+                >Seluruh kandidat merupakan mahasiswa aktif Fakultas Peternakan
+                UGM.</span
+              >
+            </label>
+            <label class="check-row">
+              <input type="checkbox" id="organizationPeriod" />
+              <span
+                >Seluruh kandidat pernah menjadi anggota BEM FAPET UGM minimal
+                satu periode, dibuktikan dengan SK Dekan.</span
+              >
+            </label>
+            <label class="check-row">
+              <input type="checkbox" id="ministryMeetings" />
+              <span
+                >Seluruh kandidat telah mengikuti minimal tiga kali rapat
+                kementerian selama tahun 2026.</span
+              >
+            </label>
+            <label class="check-row">
+              <input type="checkbox" id="majorEvent" />
+              <span
+                >Seluruh kandidat telah mengikuti minimal satu kegiatan besar
+                BEM FAPET UGM selama tahun 2026.</span
+              >
+            </label>
+            <label class="check-row">
+              <input type="checkbox" id="leadership" />
+              <span
+                >Seluruh kandidat memiliki kemampuan kepemimpinan, koordinasi,
+                dan etika organisasi yang baik.</span
+              >
+            </label>
+            <label class="check-row">
+              <input type="checkbox" id="noSanctions" />
+              <span
+                >Seluruh kandidat tidak sedang menerima sanksi akademik maupun
+                organisasi.</span
+              >
+            </label>
+            <label class="check-row">
+              <input type="checkbox" id="commitment" />
+              <span
+                >Seluruh kandidat bersedia berkomitmen dan menjalankan tanggung
+                jawab sebagai Menteri, dibuktikan dengan pernyataan
+                kesediaan.</span
+              >
+            </label>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <div class="section-heading">
+            <span class="section-number">04</span>
+            <div>
+              <h2>Pernyataan dan Persetujuan</h2>
+              <p>
+                Baca dan centang seluruh pernyataan sebelum mengirimkan
+                formulir.
+              </p>
+            </div>
+          </div>
+
+          <div class="verification-list declaration-list">
+            <label class="check-row">
+              <input type="checkbox" id="approval" />
+              <span
+                >Saya menyatakan bahwa pengajuan ini telah diketahui dan
+                disetujui oleh Menteri dan Wakil Menteri terkait.</span
+              >
+            </label>
+            <label class="check-row">
+              <input type="checkbox" id="confidential" />
+              <span
+                >Saya bersedia menjaga kerahasiaan seluruh proses dan nama
+                kandidat yang direkomendasikan.</span
+              >
+            </label>
+            <label class="check-row">
+              <input type="checkbox" id="truthful" />
+              <span
+                >Saya menyatakan bahwa seluruh informasi yang diberikan benar
+                dan dapat dipertanggungjawabkan.</span
+              >
+            </label>
+          </div>
+        </section>
+
+        <div class="submit-area">
+          <p>Periksa kembali seluruh data sebelum mengirimkan pengajuan.</p>
+          <button type="submit" id="submitButton" class="button button-primary">
+            Kirim Pengajuan
+          </button>
+          <p
+            id="formMessage"
+            class="form-message"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </div>
+      </form>
+
+      <section
+        id="successPanel"
+        class="success-panel hidden"
+        aria-live="polite"
+      >
+        <div class="success-icon">✓</div>
+
+        <p class="eyebrow">PENGAJUAN BERHASIL DITERIMA</p>
+
+        <h2>Terima kasih atas kontribusimu!</h2>
+
+        <p class="success-main-message">
+          Rekomendasi calon Menteri telah berhasil kami terima.
+        </p>
+
+        <div class="success-divider"></div>
+
+        <p class="success-description">
+          Terima kasih atas waktu, dedikasi, dan kepercayaan yang telah
+          diberikan. Setiap nama yang disampaikan merupakan bagian dari harapan
+          untuk membawa BEM FAPET UGM melangkah lebih baik.
+        </p>
+
+        <p class="success-quote">
+          Every recommendation carries a hope for a better future.
+        </p>
+
+        <div class="submission-code">
+          <span>NOMOR PENGAJUAN</span>
+          <strong id="submissionId">-</strong>
+        </div>
+
+        <p class="field-help">
+          Simpan nomor pengajuan ini sebagai bukti bahwa rekomendasi telah
+          dikirim.
+        </p>
+
+        <div class="success-footer">
+          <span>BEM FAPET UGM</span>
+          <span>PERIODE 2027</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>BEM Fakultas Peternakan Universitas Gadjah Mada</p>
+      <p>Formulir Rekomendasi Calon Menteri Periode 2027</p>
+    </footer>
+
+    <template id="candidateTemplate">
+      <article class="candidate-card">
+        <div class="candidate-heading">
+          <h3>Kandidat <span class="candidate-number"></span></h3>
+          <button
+            type="button"
+            class="remove-candidate"
+            aria-label="Hapus kandidat"
+          >
+            Hapus
+          </button>
+        </div>
+        <div class="two-columns">
+          <div class="field">
+            <label>Nama lengkap <span class="required">*</span></label>
+            <input
+              class="candidate-name"
+              type="text"
+              required
+              placeholder="Nama lengkap kandidat"
+            />
+          </div>
+          <div class="field">
+            <label>NIM <span class="required">*</span></label>
+            <input
+              class="candidate-nim"
+              type="text"
+              required
+              placeholder="NIM kandidat"
+            />
+          </div>
+          <div class="field">
+            <label>Angkatan <span class="required">*</span></label>
+            <input
+              class="candidate-generation"
+              type="text"
+              required
+              inputmode="numeric"
+              placeholder="Contoh: 2023"
+            />
+          </div>
+          <div class="field full-width">
+            <label>Alasan rekomendasi <span class="required">*</span></label>
+            <textarea
+              class="candidate-reason"
+              required
+              rows="3"
+              placeholder="Jelaskan alasan kandidat direkomendasikan..."
+            ></textarea>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <!-- LOADING ANIMATION -->
+    <div
+      id="loadingOverlay"
+      class="loading-overlay hidden"
+      role="status"
+      aria-live="polite"
+    >
+      <div class="loading-content">
+        <div class="loading-cats" aria-hidden="true">
+          <span>🐈</span>
+          <span>🐈</span>
+          <span>🐈</span>
+        </div>
+
+        <h2>Meow... tunggu sebentar!</h2>
+        <p>Pengajuanmu sedang kami proses.</p>
+        <small>Mohon jangan tutup halaman ini.</small>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
