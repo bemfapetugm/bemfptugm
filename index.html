@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123D2C">
+  <title>BEM FAPET UGM</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #123D2C;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: min(1100px, 88%);
+      margin: auto;
+    }
+
+    header {
+      padding: 30px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo {
+      width: 48px;
+      height: 48px;
+      background: #fff;
+      color: #174A35;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 15px;
+    }
+
+    .brand-name {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .brand-subtitle {
+      font-size: 12px;
+      color: #C5D8CC;
+      margin-top: 4px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      padding: 70px 0;
+    }
+
+    .content {
+      max-width: 720px;
+    }
+
+    .status {
+      display: inline-block;
+      padding: 9px 13px;
+      border: 1px solid #BFA15E;
+      border-radius: 30px;
+      color: #E5C77F;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 7vw, 66px);
+      line-height: 1.12;
+      letter-spacing: -2.5px;
+      margin-bottom: 24px;
+    }
+
+    .description {
+      color: #D2E0D6;
+      font-size: 15px;
+      line-height: 1.9;
+      max-width: 580px;
+    }
+
+    .accent {
+      width: 65px;
+      height: 4px;
+      background: #D7B56D;
+      border-radius: 10px;
+      margin: 32px 0 20px;
+    }
+
+    .coming {
+      font-size: 16px;
+      font-weight: 600;
+      color: #E5C77F;
+    }
+
+    footer {
+      padding: 25px 0;
+      border-top: 1px solid rgba(255,255,255,.15);
+      color: #C5D8CC;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 24px 0; }
+      h1 { letter-spacing: -1.5px; }
+      .description { font-size: 14px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container">
+    <div class="brand">
+      <div class="logo">BEM</div>
+      <div>
+        <div class="brand-name">BEM FAPET UGM</div>
+        <div class="brand-subtitle">Kabinet Nala Sathya</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="content">
+      <div class="status">WEBSITE UNDER DEVELOPMENT</div>
+
+      <h1>Kami Sedang<br>Membangun Sesuatu.</h1>
+
+      <p class="description">
+        Website resmi BEM FAPET UGM sedang dalam proses
+        pengembangan. Kami sedang mempersiapkan ruang digital
+        yang lebih informatif dan terintegrasi untuk seluruh
+        civitas akademika.
+      </p>
+
+      <div class="accent"></div>
+
+      <p class="coming">Segera hadir.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 BEM FAPET UGM. All rights reserved.
+  </footer>
+</body>
+</html>
